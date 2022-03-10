@@ -1,0 +1,32 @@
+{
+  "name": "sass-compiler",
+  "version": "1.0.0",
+  "description": "Compile SCSS to CSS",
+  "main": "index.js",
+  "volta": {
+    "node": "16.13.0"
+  },
+  "scripts": {
+    "compile:styles": "npm run sass:styles && npm run postcss:styles",
+    "sass:styles": "sass --style=compressed ./src/styles/scss/styles.scss ./src/styles/css/styles.css",
+    "postcss:watch:styles": "postcss ./src/styles/css/styles.css -d ./dist/styles/css/styles.min.css --watch",
+    "postcss:styles": "postcss ./src/styles/css/styles.css -d ./dist/styles/css/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "4.1.3",
+    "autoprefixer": "10.4.2",
+    "cssnano": "5.1.1",
+    "pixrem": "5.0.0",
+    "postcss": "8.4.8",
+    "postcss-cli": "9.1.0",
+    "postcss-import": "14.0.2",
+    "sass": "1.49.9"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "maintained node versions"
+  ]
+}
