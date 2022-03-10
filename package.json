@@ -6,9 +6,13 @@
   "volta": {
     "node": "16.13.0"
   },
+  "engines": {
+    "node": "=16.13.0"
+  },
   "scripts": {
     "compile:styles": "npm run sass:styles && npm run postcss:styles",
     "sass:styles": "sass --style=compressed ./src/styles/scss/styles.scss ./src/styles/css/styles.css",
+    "sass:watch:styles": "sass --watch --style=compressed ./src/styles/scss/styles.scss ./src/styles/css/styles.css",
     "postcss:watch:styles": "postcss ./src/styles/css/styles.css -d ./dist/styles/css/styles.min.css --watch",
     "postcss:styles": "postcss ./src/styles/css/styles.css -d ./dist/styles/css/"
   },
