@@ -4,7 +4,7 @@
 <h1 align="center">Local Styles Processor</h1>
 
   <p align="center">
-    Sometimes you just need to process some SCSS.
+    Sometimes you just need to process some styles.
   </p>
 </div>
 
