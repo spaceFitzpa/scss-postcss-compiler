@@ -70,15 +70,17 @@ Occassionally I need to process a bunch of styles but the project I am working o
 <!-- SETUP -->
 ## Setup
 
-    - Add whatever .scss file you want compiled to CSS and processed with PostCSS to `src/styles/scss/`
-    - Update the *package.json* scripts **input** and **output** directories match yours
-    - Install any PostCSS plugins you intend to use
-    - Update `postcss.config.js` file with any of the plugins you intend to use
+ - Add whatever .scss file you want compiled to CSS and processed with PostCSS to `src/styles/scss/`
+ - Update the *package.json* scripts **input** and **output** directories match yours
+ - Install any PostCSS plugins you intend to use
+ - Update `postcss.config.js` file with any of the plugins you intend to use
 
 <!-- DEVELOPMENT PROCESS -->
 ## Development
 
-    `npm run compile:styles` compiles the SCSS from the file you input and outputs the **.css** and **.css.map** files into the `src/styles/css` directory. Then PostCSS runs whatever processes you have applied in the postcss.config.js file to your newly created **.css** and **.css.map** files and outputs these processed files into '/dist/styles/css/`
+ - Run `npm run compile:styles` 
+ - This compiles the SCSS from the file you input and outputs the **.css** and **.css.map** files into the `src/styles/css` directory.
+ - Then PostCSS runs whatever processes you have applied in the postcss.config.js file to your newly created **.css** and **.css.map** files and outputs these processed files into `/dist/styles/css/`
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -117,7 +119,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
