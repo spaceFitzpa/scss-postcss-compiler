@@ -1,0 +1,47 @@
+/*
+
+	GRID 10 FLUID
+
+*/
+
+/* Responsive ----------- */
+@media only screen
+and (max-width : #{$width}px) {
+
+	body {
+		min-width: 100%;
+	}
+
+	.container { width: auto; }
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	/* grid override */
+	// [class*="grid_"] {width:auto !important;display:block;float:none;}
+	[class*="grid_"] {
+		width: auto !important;
+		display: block;
+		float: none;
+	}
+
+	[class*="prefix_"],
+	[class*="suffix_"] {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	[class*="push"],
+	[class*="pull"] {
+		left: 0;
+	}
+
+	.container {
+		width: 100%;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+}

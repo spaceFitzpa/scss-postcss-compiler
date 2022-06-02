@@ -1,0 +1,49 @@
+//
+// Icon Font: swbeans
+//
+
+@font-face {
+  font-family: "swbeans";
+  src: url("../fonts/swbeans.eot");
+  src: url("../fonts/swbeans.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/swbeans.woff") format("woff"),
+       url("../fonts/swbeans.ttf") format("truetype"),
+       url("../fonts/swbeans.svg#swbeans") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "swbeans";
+    src: url("../fonts/swbeans.svg#swbeans") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.i-top-center:before,
+.i-top-left:before,
+.i-top-right:before {
+  display: inline-block;
+  font-family: "swbeans";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.i-top-center:before { content: "\f100"; }
+.i-top-left:before { content: "\f101"; }
+.i-top-right:before { content: "\f102"; }
+
+$font-swbeans-top-center: "\f100";
+$font-swbeans-top-left: "\f101";
+$font-swbeans-top-right: "\f102";

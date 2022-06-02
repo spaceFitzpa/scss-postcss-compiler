@@ -1,0 +1,15 @@
+.container{
+	width: #{$width}px;
+	margin: 0 auto;
+	@extend %cf;
+}
+
+[class*="grid_"] {
+	float: left;
+}
+
+[class*="grid_"],
+[class*="push_"], 
+[class*="pull_"] { 
+	position:relative;
+}

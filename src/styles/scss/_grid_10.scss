@@ -1,0 +1,22 @@
+/*--------------------------------------------------
+10 pixel grid
+--------------------------------------------------*/
+
+$loop: $width/10;
+
+body{min-width:#{$width}px}
+.container{width: #{$width}px;margin: 0 auto;}
+.container:before,.container:after{content:'\0020';display:block;overflow:hidden;visibility:hidden;width:0;height:0;}.container:after{clear:both;}
+
+@for $i from 1 through $loop {
+	.grid_#{$i} {width:10px * $i;}
+	.prefix_#{$i} {padding-left:10px * $i;}
+	.suffix_#{$i} {padding-right:10px * $i;}
+	@if $push_or_pull {
+		.push_#{$i} {left:10px * $i;}
+		.pull_#{$i} {left:10px * $i *-1;}
+	}
+}
+
+[class*="grid_"] { float: left; position: relative; }
+[class*="push_"], [class*="pull_"] {position:relative;}

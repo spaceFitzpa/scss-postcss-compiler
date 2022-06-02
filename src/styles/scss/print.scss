@@ -1,0 +1,72 @@
+nav,
+.fc--related_recipes,
+.fc--sign-up,
+footer,
+.post-edit-link,
+hr,
+.no-print,
+.taxonomy-banner,
+.diet span {
+	display: none;
+}
+
+.diet p,
+.fc--product_feature {
+	display: block;
+}
+
+.diet {
+	background: none;
+	border: 0;
+	width: auto;
+	height: auto;
+}
+
+.diet p {
+	position: static;
+	margin: 0;
+	width: auto;
+	margin-right: 10px;
+}
+
+.single-recipe .grid-container {
+	padding-top: 20px;
+}
+
+.recipe-footnotes {
+	font-size: 20px;
+}
+
+.size-container {
+	text-align: left;
+	margin-left: -30px;
+	border: none;
+}
+
+.print {
+	display: block;
+}
+
+.recipe-image,
+.product-image {
+	img {
+		max-height: 3in;
+		width: auto;
+	}
+}
+
+.grid-item {
+	float: left !important;
+	width: 50% !important;
+	max-width: none !important;
+	padding: 0 20px;
+}
+
+body {
+	padding-top: 0;
+}
+
+
+.mobile-title {
+	margin-bottom: -100px;
+}
