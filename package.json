@@ -11,10 +11,13 @@
   },
   "scripts": {
     "compile:styles": "npm run sass:styles && npm run postcss:styles",
-    "sass:styles": "sass --style=compressed ./src/styles/scss/styles.scss ./src/styles/css/styles.css",
-    "sass:watch:styles": "sass --watch --style=compressed ./src/styles/scss/styles.scss ./src/styles/css/styles.css",
-    "postcss:watch:styles": "postcss ./src/styles/css/styles.css -d ./dist/styles/css/styles.min.css --watch",
-    "postcss:styles": "postcss ./src/styles/css/styles.css -d ./dist/styles/css/"
+    "sass:styles": "sass --style=compressed ./src/styles/scss/styles.scss ./src/styles/css/styles.min.css",
+    "sass:watch:styles": "sass --watch --style=compressed ./src/styles/scss/styles.scss ./src/styles/css/styles.min.css",
+    "postcss:watch:styles": "postcss ./src/styles/css/styles.min.css -d ./dist/styles/css/styles.min.css --watch",
+    "postcss:styles": "postcss ./src/styles/css/styles.min.css -d ./dist/styles/css/",
+    "compile:test": "npm run sass:test && npm run postcss:test",
+    "sass:test": "sass --style=compressed ./src/styles/scss/test.scss ./src/styles/css/test.min.css",
+    "postcss:test": "postcss ./src/styles/css/test.min.css -d ./dist/test/css/"
   },
   "author": "",
   "license": "ISC",

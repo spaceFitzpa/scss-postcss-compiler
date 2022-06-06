@@ -19,7 +19,10 @@ body {
 
 	&.home {
 		@include bp(1020px) {
-			padding-top: 80px;
+			padding-top: 0;
+		}
+		@include bp($l) {
+			padding-top: 0;
 		}
 	}
 
